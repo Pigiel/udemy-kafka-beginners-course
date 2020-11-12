@@ -1,0 +1,2 @@
+# docker run --rm -v $(pwd):/usr/src/myapp -w /usr/src/myapp openjdk:8 javac kafka-basics/src/main/java/kafka/tutorial1/ProducerDemo.java
+docker run --rm -it -v $(pwd):/usr/src/myapp -w /usr/src/myapp openjdk:8 bash

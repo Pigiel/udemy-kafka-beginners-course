@@ -43,7 +43,7 @@ public class ConsumerDemoGroups {
 
             for (ConsumerRecord<String, String> record : records){
                 logger.info("Key: " + record.key() + ", Value: " + record.value());
-                logger.info("Partition: " + record.partition() + ", Offset:" + record.offset());
+                logger.info("Partition: " + record.partition() + ", Offset: " + record.offset());
             }
         }
 

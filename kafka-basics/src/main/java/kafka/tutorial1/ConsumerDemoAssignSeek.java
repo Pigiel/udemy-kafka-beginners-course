@@ -54,7 +54,7 @@ public class ConsumerDemoAssignSeek {
             for (ConsumerRecord<String, String> record : records){
                 numberOfMessagesReadSoFar += 1;
                 logger.info("Key: " + record.key() + ", Value: " + record.value());
-                logger.info("Partition: " + record.partition() + ", Offset:" + record.offset());
+                logger.info("Partition: " + record.partition() + ", Offset: " + record.offset());
                 if (numberOfMessagesReadSoFar >= numberOfMessagesToRead){
                     keepOnReading = false; // to exit the while loop
                     break; // to exit the for loop
